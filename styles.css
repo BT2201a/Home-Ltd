@@ -1,0 +1,155 @@
+/* Style sheet for home-ltd  by Mike Blackmore 16-05-11 
+Thanks to Wickhams for Thumbnail at http://www.wickham43.net/tutorial.css
+*/
+
+body
+	{
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 100%;
+	color: #990099;
+	background-color: #eeeeee;
+	width: 840px;
+	}
+	
+h1
+	{
+	font-size: 150%;
+	color: black;
+	background-color: inherit;
+	text-align:center
+	}
+	
+h2
+	{
+	font-size: 130%; color: #000066;
+	background-color: inherit;
+	text-align:center
+	}
+		
+p
+	{
+	color:black;
+	width:1040px;
+	}
+
+p.indent
+	{
+	font-size: 80%;
+	margin-left:20px;
+	width:1020px;
+	background-color:#b0e0e6;
+	text-align:left
+	}
+	
+span.i{margin-left:20px}
+
+span.ii{margin-left:40px}
+
+p.left
+	{
+	text-align: left;
+	margin-left:20px;
+	}
+
+p.centered
+	{
+	text-align:center;
+	margin-top:0px;
+	margin-bottom:0px;
+	padding:0px;
+	}
+		
+table{width:100%}
+
+caption{background-color:#3366cc; color:white; font-weight: bold}
+
+th{background-color:#3366cc; color:white; border:0px}
+
+td{border:0px}		
+
+
+
+/*HOVER POPUP LINKS*/
+
+/*hoverpopups type 1*/
+
+#popup { color: #000; background-color: #c0c0c0; }
+
+#popup a, #popup a:visited {
+position: absolute;
+display: block;
+width: 200px;
+line-height: 70px;
+text-align: right;
+padding: 0 0px;
+margin: 0;
+border: 0px solid #666;
+text-decoration: none;
+font-size: 1em;
+font-weight: bold;
+}
+
+#popup a span {display: none;}
+
+#popup a:hover { background-color: #e9e9e2; }
+
+/* the IE correction rule */
+#popup a:hover	{
+color: #f00; background-color: #e9e9e2;
+text-indent: 0; /* added the default value */
+}
+
+#popup a:hover span{
+display: block;
+position: absolute;
+top: 0px;
+left: 300px;
+width: 600px;
+margin: 0px;
+padding: 0px;
+color: #335500;
+font-weight: normal;
+background: #e5e5e5;
+text-align: left;
+border: 0px solid #666;
+}
+
+
+/*THUMBNAIL HOVERPOPUPS*/
+
+.thumbnail  {
+position: relative;
+float: left;
+padding: 0px;
+/*z-index: 0;*/
+}
+
+.thumbnail:hover {
+background-color: #e9e9e2;
+/*z-index: 50;*/
+color: #335500;
+text-decoration: none;
+}
+
+.thumbnail span { /*CSS for enlarged image*/
+position: absolute;
+background-color: #e5e5e5;
+padding: 0px;
+/*left: -1000px;*/
+border: 0px solid #666;
+visibility: hidden;
+color: black;
+text-decoration: none;
+}
+
+.thumbnail span img { /*CSS for enlarged image*/
+border-width: 0px; 
+/*padding: 2px;*/
+}
+
+.thumbnail:hover span { /*CSS for enlarged image on hover*/
+visibility: visible; width: 100px;
+top: 0px; /* use IF IE6 style to correct IE6 positions of larger image relative to thumb */
+left: 300px;/*position where enlarged image should offset horizontally */
+}
+
